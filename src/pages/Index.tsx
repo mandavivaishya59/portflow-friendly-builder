@@ -9,6 +9,9 @@ import { ArrowRight } from "lucide-react";
 
 const Index = () => {
   const featuredTemplates = templates.filter(t => t.popular).slice(0, 3);
+  
+  // Store the Google Maps API key
+  const googleMapsApiKey = "AIzaSyAidKfGC1_9iBy1I-052V-ohjx7b2PNYYM";
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -19,10 +22,10 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-              Build your professional portfolio website in minutes
+              Build your AI-powered portfolio website in minutes
             </h1>
             <p className="text-xl text-gray-700 mb-8">
-              Choose from beautiful, customizable templates and create a portfolio website that stands out.
+              MandaviAI offers intelligent, customizable templates that adapt to your content and help you create a portfolio website that stands out.
               No coding required.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
@@ -59,9 +62,9 @@ const Index = () => {
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Why choose Portflow?</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Why choose MandaviAI?</h2>
             <p className="text-lg text-gray-700">
-              Our platform makes it easy to create a professional portfolio website without any design or coding skills.
+              Our AI-driven platform makes it easy to create a professional portfolio website that adapts to your content and audience.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
@@ -71,9 +74,9 @@ const Index = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"></path>
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Beautiful Templates</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">AI-Powered Templates</h3>
               <p className="text-gray-600">
-                Choose from a collection of professionally designed templates that fit your industry and style.
+                Choose from intelligent templates that adapt to your content and help you showcase your work effectively.
               </p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-sm">
@@ -82,9 +85,9 @@ const Index = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"></path>
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Easy Customization</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">Smart Customization</h3>
               <p className="text-gray-600">
-                Customize colors, fonts, and layouts with our intuitive drag-and-drop editor. No coding required.
+                Our AI helps you customize colors, fonts, and layouts based on your preferences and industry best practices.
               </p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-sm">
@@ -93,9 +96,9 @@ const Index = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Mobile Responsive</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">Intelligent Responsiveness</h3>
               <p className="text-gray-600">
-                All our templates look great on any device, from desktop computers to mobile phones.
+                MandaviAI ensures your portfolio looks perfect on any device through AI-optimized layouts.
               </p>
             </div>
           </div>
@@ -105,9 +108,9 @@ const Index = () => {
       {/* CTA Section */}
       <section className="py-16 bg-primary">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold text-white mb-6">Ready to create your portfolio?</h2>
+          <h2 className="text-3xl font-bold text-white mb-6">Ready to create your AI-powered portfolio?</h2>
           <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-            Get started today and have your professional portfolio online in minutes.
+            Get started today and have your intelligent professional portfolio online in minutes.
           </p>
           <Button size="lg" variant="default" asChild className="bg-white text-primary hover:bg-gray-100">
             <Link to="/templates">Get Started For Free</Link>

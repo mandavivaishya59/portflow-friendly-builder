@@ -13,7 +13,7 @@ export const Navbar = () => {
         <div className="flex justify-between items-center">
           <div className="flex items-center">
             <Link to="/" className="flex items-center">
-              <span className="text-xl font-bold text-primary">MandaviAI</span>
+              <span className="text-xl font-bold text-primary">Portflow.ai</span>
             </Link>
           </div>
 

@@ -11,8 +11,10 @@ import Editor from "./pages/Editor";
 import Features from "./pages/Features";
 import Pricing from "./pages/Pricing";
 import NotFound from "./pages/NotFound";
+import AiAssistant from "./components/AiAssistant";
 
 const queryClient = new QueryClient();
+const aiAssistantApiKey = "AIzaSyAidKfGC1_9iBy1I-052V-ohjx7b2PNYYM";
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
@@ -30,6 +32,7 @@ const App = () => (
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
+        <AiAssistant apiKey={aiAssistantApiKey} />
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
